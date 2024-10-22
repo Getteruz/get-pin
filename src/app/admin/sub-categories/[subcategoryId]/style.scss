@@ -1,0 +1,109 @@
+.subcategory-content{
+  margin-left: 387px;
+  padding-bottom: 90px;
+  height: 100vh;
+  width: 676px;
+  .top-content{
+    position:fixed;
+    width:100%;
+    display:flex;
+    align-items: center;
+    height:74px;
+    background-color: #fff;
+    z-index:10;
+    .back-icon{
+      position: absolute;
+      left:-66px;
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border:none;
+      cursor:pointer;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    h3{
+      overflow: hidden;
+      color: #121212;
+      text-overflow: ellipsis;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .add-subcategory{
+      position: fixed;
+      right:0;
+      width:80px;
+      height:74px;
+      border:none;
+      color: #FFF;
+      background: #fff;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button{
+      position: fixed;
+      right:0;
+      width:180px;
+      border:none;
+      color: #FFF;
+      height: 74px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      background: #6900FF;
+      cursor: pointer;
+    }
+  }
+  .add-subcategory-input{
+    height: 100vh;
+    padding-top: 100px;
+    width: 100%;
+    position: relative;
+    input, select{
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 7px;
+      border: 1px solid #E3E4E8;
+      outline: none;
+      width: 100%;
+      text-overflow: ellipsis;
+      font-size: 22px;
+      font-weight: 400;
+
+      &::placeholder{
+        color: #A6A5AD;
+      }
+    }
+    input{
+      color: #000;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom: none;
+    }
+    select{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      cursor: pointer;
+      appearance: none;
+      position: relative;
+      background: transparent;
+    }
+    .select{
+      position: relative;
+      &::before{
+        content: url("/down-arrow.svg");
+        position: absolute;
+        top: 30%;
+        right: 20px;
+      }
+    }
+    //select.opacity{
+    //  color: #A6A5AD;
+    //}
+  }
+}

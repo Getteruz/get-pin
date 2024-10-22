@@ -1,0 +1,98 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color:  #F6F6F6;
+    nav{
+        z-index: 100;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .nav-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-logo{
+                color: #131313;
+                font-family: "Righteous";
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.8px;
+            }
+        }
+        .account{
+            position: relative;
+            z-index: 20000;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            .account-title{
+                color: #131313;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                font-family: "SF Pro Text"  ,sans-serif;
+                font-size: 16px;
+                padding: 16px 18px;
+                border-radius: 14px;
+                background-color: #FFEC41;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.64px;
+                border: none;
+                cursor: pointer;
+                span{
+                    display: none;
+                    @media (min-width:1300px) {
+                       display: inline-block;
+                    }
+                }
+            }
+            .account-sign{
+                width: 80px;
+                height: 52px;
+                background: #A9FFE0;
+                border-radius: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                gap: 4px;
+                    color: #121212;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: -0.64px;
+
+            }
+            .account-img{
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px 12px 5px 5px;
+                background: #A9FFE0;
+                border-radius: 14px;
+                img{
+                    &:first-child{
+                        width: 42px;
+                        height: 42px;
+                    }
+                    &:last-child{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-shrunk{
+    background: #fff;
+}

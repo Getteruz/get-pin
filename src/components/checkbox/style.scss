@@ -1,0 +1,53 @@
+// styles/global.scss
+
+.check-subtitle{
+  display: none;
+  @media (min-width: 1375px) {
+    display: inline-block;
+  }
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  .slider {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color:  #4caf50;
+    border-radius: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 19px;
+      bottom: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.2s;
+      @media (min-width: 860px) {
+        left: 21px;
+      }
+    }
+  }
+
+  input:checked + .slider {
+    background-color:  #ccc;
+
+    &:before {
+      transform: translateX(-18px);
+    }
+  }
+}
